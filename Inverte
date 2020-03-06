@@ -1,0 +1,106 @@
+#include <stdio.h>
+#include <string.h>
+
+void troca(char *a, char *b){
+  char aux= *a;
+  *a = *b;
+  *b = aux;
+
+int main() {
+  char s[100];
+  char aux;
+  int i, j, N;
+  
+  scanf("%s", s); // le string
+  N = strlen(s);
+  
+  j= N-1
+  for(i=0; i<N/2; i++, j--){
+  // trocar (s[i] com s[j]
+  trocar (&s[i], &s[j]);
+  }
+  printf("%s/n", s);
+}
+
+
+C++
+
+#include <iostream>
+#include <string.h>
+
+void troca(char &a, char &b){
+  char aux= a;
+  a = b;
+  b = aux;
+
+int main() {
+  string s;
+  int N;
+  
+  std::cin >> s // le string
+  N = s.size();
+  
+  j= N-1
+  for(i=0, j=N-1; i<N/2; i++, j--){
+  // trocar (s[i] com s[j]
+  trocar (&s[i], &s[j]);
+  }
+  std::cout << s << endl;
+}
+
+
+C++
+
+#include <iostream>
+
+using namespace std;
+
+int main () {
+  // le tres inteiros
+  int a, b, c;
+  cin >> a >> b >> c;
+  
+  bool var = false;
+  
+  if (a>b and a>c)
+    cout << a << endl; 
+  else if (b>a and b>c)
+    cout << b << endl; 
+  else
+    cout << c << endl; 
+    
+  return 0;
+  }
+
+
+C++
+
+#include <iostream>
+
+using namespace std;
+
+int main () {
+//le N seguido de N inteiros e imprime o maior
+//usando vetor
+vector<int> v;
+int N;
+cin >> N;
+for(int i=0;i<N;i++) {
+  int X;
+  cin >> X;
+  v.push_back(X);
+  }
+  // imprime o vetor
+  for(int i=0; i<v.size();i++)
+    count <<v[i] << " ";
+    count << endl;
+    
+    int maior=v[0]
+    for(int i=1; i<v.size();i++)
+    if(v[i] > maior)
+    maior = v[i];
+    
+    count << "O maior elemento eh" << maior << " e eh i sso ai" << endl;
+    
+return 0;
+}
